@@ -18,7 +18,7 @@ This will install all dependencies needed for the application to run.
 This workflow is based on ES6 techniques and useful tools to make development of your THREE.js application as easy as possible!
 
 #### Global variables
-Variables in ES6 can be made easily accessible by using `imports`. Importing one of the object below gives you the opportunity change them in one place and use them in another (they will update automatically).
+Variables in ES6 can be made easily accessible by using `imports`. Importing one of the objects below gives you the opportunity to change them in one place and use them in another (these will update automatically).
 
 * **Defaults:** Used to store all THREE.js object: scene, renderer, camera and an object for structure elements like geometries and materials. These can be used in the GUI to update them in real-time.
 
@@ -27,7 +27,7 @@ Variables in ES6 can be made easily accessible by using `imports`. Importing one
 * **Tools:** Used to store useful tools like a [GUI](https://github.com/dataarts/dat.gui) for changing variables in real-time, [orbit controls](https://github.com/mattdesl/three-orbit-controls) for user movement in the THREE.js world and a [stats monitor](https://github.com/mrdoob/stats.js/) to keep track of performance in the application. *These can all be turned on and off in the user settings.*
 
 #### THREE.js
-To create amazing things with THREE.js you should only have to focus on two things: Creating the magical environment and adding bringing it to life with movement.
+To create amazing things with THREE.js you should only have to focus on two things: Creating the magical environment and bringing it to life with movement.
 
 * **Create:** After creating the basic requirements to run a THREE.js world the environment is created. This environment can be stored globally and adjusted by the GUI. This can be found in `environment.js`.
 
@@ -36,7 +36,7 @@ To create amazing things with THREE.js you should only have to focus on two thin
 #### Overall Workflow
 To enhance the overall workflow these tools are really helpful to stay consistent with your code style and applying new techniques and standards while staying backwards compatible.
 
-* **Webpack:** Used to compile Javascript (with [Babel](https://babeljs.io)) for backwards compatibility. Running the development script watches and compiles Javascript as you develop and offers a localhost to see your application run. Running the production script compiles the Javascript once and uglifies it to get the smallest size available. More documentation can be found [here](https://webpack.js.org).
+* **Webpack:** Used to compile Javascript (with [Babel](https://babeljs.io)) for backwards compatibility. Running the development script watches and bundles Javascript as you develop and offers a localhost to see your application run on. Running the production script bundles the Javascript once and uglifies it to get the smallest size available. More documentation can be found [here](https://webpack.js.org).
 
 * **ESLint:** Used to maintain Javascript code standards throughout the project. This workflow uses the [Airbnb Style Guide](https://github.com/airbnb/javascript) and can be adjusted to your liking in the `.eslintrc` file.  More documentation can be found [here](http://eslint.org).
 
